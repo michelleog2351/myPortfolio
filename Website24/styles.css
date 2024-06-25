@@ -1,0 +1,20 @@
+nav.navbar {
+  margin: 10px;
+}
+
+td img {
+  width: 20px;
+  height: auto;
+}
+
+.textArea {
+  height: 200px;
+  width: 100%;
+  resize: none;
+  font-size: 14px;
+  background-color: #f8f8f8;
+}
+
+footer {
+  text-align: center;
+}
