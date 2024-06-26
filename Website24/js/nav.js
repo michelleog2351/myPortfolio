@@ -17,7 +17,8 @@ function nav() {
 
                 <ul class="dropdown-menu" aria-labelled="navbarDropdown">
                   <li><a class="dropdown-item" href="art.html">Art</a></li>
-                  <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+                  <li><a class="dropdown-item" href="music.html">Music</a></li>
+                  <li><a class="dropdown-item" href="sports.html">Sport</a></li>
                 </ul>
             </li> 
 
