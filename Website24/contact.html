@@ -17,6 +17,7 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
 
     <title>Contact Me</title>
   </head>
@@ -24,44 +25,101 @@
   <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light" id="nav"></nav>
     <div class="container-fluid">
-      <h1>Login</h1>
+      <h1>Want To Know More?</h1>
 
-      <div id="myDiv"></div>
-
-      <form action="">
-        <div>
-          <label class="form-label" for="email">Email:</label>
-          <input
-            class="form-control"
-            type="email"
-            id="email"
-            name="name"
-            placeholder="Email address"
-          />
-        </div>
-
-        <div>
-          <label class="form-label" for="password">Password:</label>
-          <input
-            class="form-control"
-            type="password"
-            id="password"
-            name="name"
-            placeholder="Password"
-          />
-        </div>
-
+      <div id="myDiv">
         <button
-          value="button"
-          type="submit"
-          class="btn btn-primary"
-          id="loginButton"
+          type="button"
+          class="btn btn-secondary"
+          id="contactBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
         >
-          Login
+          Contact Me
         </button>
-      </form>
+      </div>
     </div>
-  </body>
 
-  <footer>&copy; L00176523 Client Side Development 2024</footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input
+                    class="form-control"
+                    type="name"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input
+                    class="form-control"
+                    type="name"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="email">Email:</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <label class="form-label" for="comments">Comments</label>
+              <div class="form-floating">
+                <textarea
+                  class="textArea"
+                  class="form-control"
+                  id="textArea"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="submitContactForm"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>&copy; L00176523 Client Side Development 2024</footer>
+  </body>
 </html>
