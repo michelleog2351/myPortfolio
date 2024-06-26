@@ -7,6 +7,20 @@ function nav() {
                 <a class="nav-link text-dark" href="index.html">Home</a>
             </li> 
 
+            <li class="nav-item dropdown">
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" 
+                href="hobbies.html 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">My Hobbies</a>
+
+                <ul class="dropdown-menu" aria-labelled="navbarDropdown">
+                  <li><a class="dropdown-item" href="art.html">Art</a></li>
+                  <li><a class="dropdown-item" href="sport.html">Sport</a></li>
+                </ul>
+            </li> 
+
             <li class="nav-item">
                 <a class="nav-link text-dark" href="contact.html">Contact</a>
             </li> 
