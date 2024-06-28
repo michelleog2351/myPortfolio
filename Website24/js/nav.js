@@ -12,7 +12,7 @@ function nav() {
                href="about_me.html" 
                role="button" 
                data-bs-toggle="dropdown" 
-               aria-expanded="false">About Me</a>
+               aria-expanded="false">About</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="art.html">Art</a></li>
                 <li><a class="dropdown-item" href="dance_music.html">Dance & Music</a></li>
