@@ -15,8 +15,9 @@ function nav() {
                aria-expanded="false">About</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="art.html">Art</a></li>
-                <li><a class="dropdown-item" href="dance_music.html">Dance & Music</a></li>
+                <li><a class="dropdown-item active-button" href="dance_music.html">Dance & Music</a></li>
                 <li><a class="dropdown-item" href="sports.html">Sport</a></li>
+                <li><a class="dropdown-item" href="books.html">Literature</a></li>
             </ul>
         </li> 
 
