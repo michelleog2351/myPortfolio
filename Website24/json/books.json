@@ -9,9 +9,23 @@
     "publisher": "O'Brien Press",
     "language": "English",
     "pageCount": 160,
-    "coverImageUrl": "https://under-the-hawthorn-tree.jpg",
+    "coverImageUrl": "https://obrien.ie/assets/fc0729de/underthehawthorntree-74939-315x440.jpg",
     "rating": 4.7,
     "price": 12.99
+  },
+   {
+    "title": "Wildflower Girl",
+    "author": "Marita Conlon-McKenna",
+    "publicationYear": 1991,
+    "genre": "Historical Fiction",
+    "ISBN": "978-0-86278-283-2",
+    "description": "The sequel to 'Under the Hawthorn Tree', this book follows Eily as she travels to America in search of a better life.",
+    "publisher": "O'Brien Press",
+    "language": "English",
+    "pageCount": 176,
+    "coverImageUrl": "https://obrien.ie/assets/e74b6e2b/wildflowergirl-27309-315x440.jpg",
+    "rating": 4.8,
+    "price": 13.99
   },
   {
     "title": "Charlie and the Chocolate Factory",
@@ -23,7 +37,7 @@
     "publisher": "Alfred A. Knopf",
     "language": "English",
     "pageCount": 155,
-    "coverImageUrl": "https://example.com/charlie-and-the-chocolate-factory.jpg",
+    "coverImageUrl": "https://www.easons.com/globalassets/5637150827/all/books/childrens/fiction-teenage/teenage-fiction-12-to-15-years/9780241558324.jpg?width=251&height=389&mode=max",
     "rating": 4.8,
     "price": 8.99
   },
