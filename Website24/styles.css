@@ -91,6 +91,11 @@ td img {
   display: block; /* Ensures block display */
 }
 
+/* Change cursor on hover image */
+.book-image {
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   text-align: center;

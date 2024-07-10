@@ -194,5 +194,47 @@
     "coverImageUrl": "https://example.com/the-twits.jpg",
     "rating": 4.7,
     "price": 7.99
-  }
+  },
+  {
+  "title": "The Hunger Games",
+  "author": "Suzanne Collins",
+  "publicationYear": 2008,
+  "genre": "Young Adult, Science Fiction, Dystopian",
+  "ISBN": "978-0-439-02348-1",
+  "description": "In a dystopian future, the totalitarian nation of Panem is divided into 12 districts and the Capitol. Each year two young representatives from each district are selected by lottery to participate in The Hunger Games. Part entertainment, part brutal retribution for a past rebellion, the televised games are broadcast throughout Panem. The 24 participants are forced to eliminate their competitors while the citizens of Panem are required to watch.",
+  "publisher": "Scholastic Press",
+  "language": "English",
+  "pageCount": 374,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/51k0AqyFInL._SX329_BO1,204,203,200_.jpg",
+  "rating": 4.3,
+  "price": 8.00
+},
+{
+  "title": "Catching Fire",
+  "author": "Suzanne Collins",
+  "publicationYear": 2009,
+  "genre": "Young Adult, Science Fiction, Dystopian",
+  "ISBN": "978-0-439-02349-8",
+  "description": "Against all odds, Katniss Everdeen has won the annual Hunger Games with fellow district tribute Peeta Mellark. But it was a victory won by defiance of the Capitol and their harsh rules. Katniss and Peeta should be happy. After all, they have just won for themselves and their families a life of safety and plenty. But there are rumors of rebellion among the subjects, and Katniss and Peeta, to their horror, are the faces of that rebellion.",
+  "publisher": "Scholastic Press",
+  "language": "English",
+  "pageCount": 391,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/51cH6w9sC5L._SX335_BO1,204,203,200_.jpg",
+  "rating": 4.4,
+  "price": 8.00
+},
+{
+  "title": "Mockingjay",
+  "author": "Suzanne Collins",
+  "publicationYear": 2010,
+  "genre": "Young Adult, Science Fiction, Dystopian",
+  "ISBN": "978-0-439-02350-4",
+  "description": "Against all odds, Katniss Everdeen has survived the Hunger Games twice. But now that she's made it out of the bloody arena alive, she's still not safe. The Capitol is angry. The Capitol wants revenge. Who do they think should pay for the unrest? Katniss. And what's worse, President Snow has made it clear that no one else is safe either. Not Katniss's family, not her friends, not the people of District 12.",
+  "publisher": "Scholastic Press",
+  "language": "English",
+  "pageCount": 390,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/51x0feK0igL._SX331_BO1,204,203,200_.jpg",
+  "rating": 4.5,
+  "price": 8.00
+}
 ]

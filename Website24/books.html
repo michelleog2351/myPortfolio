@@ -51,6 +51,33 @@
 
     </tbody>
 </table>
+
+<!-- Modal Structure -->
+    <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookModalLabel">Book Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImage" class="card-img-top" src="" alt="Book image" style="width: 100%">
+            <div class="card-body">
+              <h4 id="modalTitle" class="card-title"></h4>
+              <p id="modalAuthor" class="card-text"></p>
+              <p id="modalPrice" class="card-text"></p>
+              <p id="modalDesc" class="card-text"></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Buy</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">ADD TO WANT TO READ</button>
+ 
+          </div>
+        </div>
+
     </div>
 
     <footer>&copy; L00176523 Client Side Development 2024</footer>
