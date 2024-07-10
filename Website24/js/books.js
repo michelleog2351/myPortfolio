@@ -1,20 +1,29 @@
 // Create an empty array to store data received from the database
-//var data = [];
 var booksData = [];
 // Wait for the document to be fully loaded before executing any code
 $(document).ready(function () {
   nav(); // Call the nav function to initialize navigation
   getInitialTB();
-  getBooksDD();
+  //getBooksDD();
 });
 
 function getBooksDD() {
+  var authorsSet = new Set(); // Using Set to track unique authors
 
-      $.each(booksData, function (index, value) {
-        $("#books").append(
-          `<option value='${value.author}'>${value.author}</option>`
-        );
-      });
+  // Collect unique authors
+  $.each(booksData, function (index, value) {
+    authorsSet.add(value.author);
+  });
+
+  // Convert the Set to an Array and sort it
+  var authorsArray = Array.from(authorsSet).sort();
+
+  // Populate the dropdown with sorted authors
+  $.each(authorsArray, function (index, author) {
+    $("#books").append(
+      `<option value='${author}'>${author}</option>`
+    );
+  });
 
       // https://www.bookstation.ie/product/georges-marvellous-medicine-2/
       // <a href="https://www.bookstation.ie/product/${value.title}-2">Info...</a>
@@ -26,8 +35,6 @@ function getBooksDD() {
         $("#tbody").empty();
 
         var thisTable = "";
-
-        // Populate the table based on the selected team
        
            $.each(booksData, function(index, value) 
            {
@@ -60,8 +67,8 @@ function getBooksDD() {
       // Show the modal
       $("#bookModal").modal('show');
     });
-      });
-    }
+  });
+}
 
 function getInitialTB()
 	{
@@ -104,6 +111,9 @@ function getInitialTB()
         // Show the modal
         $("#bookModal").modal('show');
       });
+
+      // Populate the dropdown menu with authors
+      getBooksDD();
     },
     error: function(xhr, status, strError) {
       $("#myDiv").text("There was an error!");
