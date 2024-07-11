@@ -35,6 +35,19 @@ function getBooksDD() {
         $("#tbody").empty();
 
         var thisTable = "";
+
+        // // Sort booksData by title alphabetically
+        // Sort booksData by title alphabetically using an if statement approach
+        booksData.sort(function(a, b) {
+          if (a.title < b.title) {
+            return -1;
+          }
+          if (a.title > b.title) {
+            return 1;
+          }
+          return 0;
+        });
+        // booksData.sort((a, b) => a.title.localeCompare(b.title));
        
            $.each(booksData, function(index, value) 
            {
@@ -84,6 +97,17 @@ function getInitialTB()
       
       // Populate initial table (#tbody) with fetched data
       var thisTable = "";
+
+      booksData.sort(function(a, b) {
+          if (a.title < b.title) {
+            return -1;
+          }
+          if (a.title > b.title) {
+            return 1;
+          }
+          return 0;
+        });
+
       $.each(booksData, function(index, value) {
         thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click to view details"></td>`;

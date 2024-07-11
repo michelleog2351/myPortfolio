@@ -348,5 +348,33 @@
   "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/51sNWpTMS9L._SX332_BO1,204,203,200_.jpg",
   "rating": 4.3,
   "price": 5.99
+},
+{
+  "title": "Watership Down",
+  "author": "Richard Adams",
+  "publicationYear": 1972,
+  "genre": "Adventure",
+  "ISBN": "978-0-7432-9729-9",
+  "description": "Watership Down is a tale of adventure, survival, and an epic journey of a group of rabbits seeking a new home.",
+  "publisher": "Rex Collings",
+  "language": "English",
+  "pageCount": 478,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/51KECwS+7kL._SX326_BO1,204,203,200_.jpg",
+  "rating": 4.5,
+  "price": 10.99
+},
+{
+  "title": "The Story of Tracy Beaker",
+  "author": "Jacqueline Wilson",
+  "publicationYear": 1991,
+  "genre": "Children's literature",
+  "ISBN": "978-0440867570",
+  "description": "The Story of Tracy Beaker is about a girl named Tracy who lives in a children's home, longing to be reunited with her mother. She tells her story through her own vivid imagination and perspective.",
+  "publisher": "Yearling",
+  "language": "English",
+  "pageCount": 160,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/91tisH45C8L.jpg",
+  "rating": 4.3,
+  "price": 6.99
 }
 ]
