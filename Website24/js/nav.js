@@ -49,10 +49,17 @@ function nav() {
     $("nav").append(
       `<ul class="navbar-nav">
 
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="login.html">Login</a>
+                <li>
+                <a href="shopping.html">
+                <img src="bookImages/shopping-cart.jpg" alt="Shopping Cart Icon" style="width: 20px; height: 20px; margin-right: 10px; margin-top: 10px;">
+                </a>
                 </li>
-            </ul> `
+                
+                <li class="nav-item"> 
+                    <a class="nav-link text-dark" href="login.html">
+                      Login</a>
+                </li>
+        </ul> `
     );
   }
 }
