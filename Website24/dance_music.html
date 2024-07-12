@@ -17,7 +17,8 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     ></script>
     <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/JSONData.js"></script>
+    <script type="text/javascript" src="js/danceMusic.js"></script>
+
 
     <title>Dancing</title>
 
@@ -30,73 +31,64 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light" id="nav"></nav>
-    <div class="container-fluid">
-      <h1>Let's dance, shall we?</h1>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light" id="nav"></nav>
+  <div class="container-fluid">
+    <h1>Let's dance, shall we?</h1>
 
-      <div id="myDiv"></div>
+    <div id="myDiv"></div>
 
-      <div class="d-flex justify-content-center align-items-center vh-100">
-        <div
-          id="carouselSlides"
-          class="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-interval="5000"
-          style="width: 60%"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="pictures/dance/ballerinaPose.jpg"
-                class="d-block w-100"
-                alt="Ballerina Pose"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="pictures/dance/pointe-shoes.jpg"
-                class="d-block w-100"
-                alt="Pointe Shoes"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="pictures/dance/drums.jpg"
-                class="d-block w-100"
-                alt="Drums in the Sunset"
-              />
-            </div>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div
+        id="carouselSlides"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+        style="width: 60%"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="pictures/dance/ballerinaPose.jpg"
+              class="d-block w-100"
+              alt="Ballerina Pose"
+            />
           </div>
-
-          <a
-            class="carousel-control-prev"
-            href="#carouselSlides"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselSlides"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+          <div class="carousel-item">
+            <img
+              src="pictures/dance/pointe-shoes.jpg"
+              class="d-block w-100"
+              alt="Pointe Shoes"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="pictures/dance/drums.jpg"
+              class="d-block w-100"
+              alt="Drums in the Sunset"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </body>
+
+    <div class="d-flex justify-content-center mt-3">
+      <button type="button" class="btn btn-secondary round-button" id="pauseButton">
+        <span class="visually-hidden">Pause</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+          <path d="M5.5 3.5A1.5 1.5 0 1 1 4 5v6a1.5 1.5 0 1 1 1.5-1.5V3.5zM10.5 3.5A1.5 1.5 0 1 1 9 5v6a1.5 1.5 0 1 1 1.5-1.5V3.5z"/>
+        </svg>
+      </button>
+      <button type="button" class="btn btn-secondary round-button" data-bs-target="#carouselSlides" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button type="button" class="btn btn-secondary round-button" data-bs-target="#carouselSlides" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</body>
 
   <footer>&copy; L00176523 Client Side Development 2024</footer>
 </html>
-<!-- body {
-  background-image: url("img_tree.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  margin-right: 200px;
-  background-attachment: scroll;
-} -->
