@@ -16,7 +16,7 @@ $(document).ready(function () {
         $carouselElement.carousel('next');
       }
       startAutoSlideTimer(); // Restart the timer
-    }, 4000); // 4000 milliseconds = 5 seconds
+    }, 3000); // 3000 milliseconds = 5 seconds
   }
 
   // Event listener for carousel slide start

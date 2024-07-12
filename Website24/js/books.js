@@ -53,7 +53,7 @@ function getBooksDD() {
            {
             if ($("#books").val() == value.author || $("#books").val() == "All") {
               thisTable += `<tr>`;
-              thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click to view details"></td>`;
+              thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
               thisTable += `<td>€${value.price.toFixed(2)}</td>`;
               thisTable += `</tr>`;
@@ -110,7 +110,7 @@ function getInitialTB()
 
       $.each(booksData, function(index, value) {
         thisTable += `<tr>`;
-              thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click to view details"></td>`;
+              thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
               thisTable += `<td>€${value.price.toFixed(2)}</td>`; 
               thisTable += `</tr>`;

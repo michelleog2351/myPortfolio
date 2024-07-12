@@ -376,5 +376,20 @@
   "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/91tisH45C8L.jpg",
   "rating": 4.3,
   "price": 6.99
+},
+{
+  "title": "Anne of Green Gables",
+  "author": "Lucy Maud Montgomery",
+  "publicationYear": 1908,
+  "genre": "Children's literature",
+  "ISBN": "978-0-486-21479-2",
+  "description": "Anne of Green Gables is the first novel in a series by Lucy Maud Montgomery. It recounts the adventures of Anne Shirley, an 11-year-old orphan girl who is mistakenly sent to Matthew and Marilla Cuthbert, a middle-aged brother and sister who had intended to adopt a boy to help them on their farm in Prince Edward Island.",
+  "publisher": "Bantam Books",
+  "language": "English",
+  "pageCount": 320,
+  "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/I/61nCyGt4Z-L.jpg",
+  "rating": 4.4,
+  "price": 8.99
 }
+
 ]
