@@ -8,16 +8,28 @@ h1 {
   text-align: center;
 }
 
+body {
+  background-image: url("pictures/dance/wood_bg.jpg");
+}
+
 /* Carousel */
-.carousel-slide{
-  width: 100%; 
+.carousel-slide {
+  width: 100%;
   max-width: 800px;
+  overflow: hidden; /* Prevent overflow issues */
 }
 
 .carousel-item img {
   width: 100%;
-  height: 500px; /* Adjust this value as needed */
-  object-fit: cover;
+  height: 500px; /* Set a fixed height */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.carousel-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Flip Box */
@@ -129,6 +141,23 @@ td img {
   border: 2px solid darkgray; /* Added border width and style */
   margin-right: 10px;
   margin-top: 10px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+/* Text block */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px; /* Optional: Rounded corners */
 }
 
 /* Footer */
