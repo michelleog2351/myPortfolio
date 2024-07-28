@@ -1,0 +1,139 @@
+{
+  "paintings": [
+    {
+      "artist": "Pierre-Auguste Renoir",
+      "paintings": [
+        {
+          "title": "Dance at the Moulin de la Galette",
+          "year": 1876,
+          "period": "Impressionism"
+        },
+        {
+          "title": "The Umbrellas",
+          "year": 1886,
+          "period": "Impressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Claude Monet",
+      "paintings": [
+        {
+          "title": "Impression, Sunrise",
+          "year": 1872,
+          "period": "Impressionism"
+        },
+        {
+          "title": "Water Lily Pond - Green Harmony",
+          "year": 1899,
+          "period": "Impressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Edgar Degas",
+      "paintings": [
+        {
+          "title": "Two Ballet Dancers in a Dressing Room",
+          "year": 1878,
+          "period": "Impressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Vincent van Gogh",
+      "paintings": [
+        {
+          "title": "Vase of Sunflowers",
+          "year": 1888,
+          "period": "Post-Impressionism"
+        },
+        {
+          "title": "The Starry Night",
+          "year": 1889,
+          "period": "Post-Impressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Paul Cézanne",
+      "paintings": [
+        {
+          "title": "Mont Sainte-Victoire",
+          "year": 1902,
+          "period": "Post-Impressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Pablo Picasso",
+      "paintings": [
+        {
+          "title": "The Old Guitarist",
+          "year": 1903,
+          "period": "Blue Period"
+        },
+        {
+          "title": "The Weeping Woman",
+          "year": 1937,
+          "period": "Cubism"
+        }
+      ]
+    },
+    {
+      "artist": "Georges Braque",
+      "paintings": [
+        {
+          "title": "Woman with a Guitar",
+          "year": 1913,
+          "period": "Cubism"
+        }
+      ]
+    },
+    {
+      "artist": "Emil Nolde",
+      "paintings": [
+        {
+          "title": "The Prophet",
+          "year": 1912,
+          "period": "Expressionism"
+        },
+        {
+          "title": "Two Women in a Garden",
+          "year": 1915,
+          "period": "Expressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Edvard Munch",
+      "paintings": [
+        {
+          "title": "The Scream",
+          "year": 1893,
+          "period": "Expressionism"
+        }
+      ]
+    },
+    {
+      "artist": "Georgia O'Keeffe",
+      "paintings": [
+        {
+          "title": "Purple Leaves",
+          "year": 1924,
+          "period": "Modernism"
+        }
+      ]
+    },
+    {
+      "artist": "Salvador Dalí",
+      "paintings": [
+        {
+          "title": "The Persistence of Memory",
+          "year": 1931,
+          "period": "Surrealism"
+        }
+      ]
+    }
+  ]
+}
