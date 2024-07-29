@@ -3,8 +3,18 @@ var booksData = [];
 // Wait for the document to be fully loaded before executing any code
 $(document).ready(function () {
   nav(); // Call the nav function to initialize navigation
-  getInitialTB();
+  // getInitialTB();
   //getBooksDD();
+
+  // Only start the timeout after all images are loaded
+      $(window).on('load', function () {
+        // Extra delay (optional)
+        setTimeout(function() {
+          $('.buttonload').html('Loaded'); // Change button text after loading
+        }, 5000); // Additional delay after all resources are loaded
+      });
+  
+  getInitialTB();
 });
 
 function getBooksDD() {

@@ -118,6 +118,35 @@ td img {
   display: block; /* Ensures block display */
 }
 
+/* Center the button on the page */
+.center-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Button styling */
+.buttonload {
+  background-color: #04AA6D; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 24px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Vertically center icon and text */
+}
+
+/* Icon styling */
+.fa {
+  margin-right: 8px; /* Add right margin to the icon */
+}
+
+/* Change background color on hover for the header row */
+table tr:hover {
+  background-color: rgba(107, 71, 71, 0.537); /* Light gray background on hover */
+}
+
 /* Change cursor on hover image */
 .book-image {
   cursor: pointer;
@@ -127,6 +156,11 @@ td img {
 .book-image:hover {
   outline: 6px solid grey; /* Add an outline on hover */
   border-radius: 50%;
+}
+
+.modal-body img {
+  max-width: 100%; /* Ensures the image does not exceed the modal width */
+  height: 500px; /* Keeps the aspect ratio */
 }
 
 .round-button {
