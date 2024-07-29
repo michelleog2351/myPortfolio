@@ -4,7 +4,7 @@
 $(document).ready(function () {
   nav(); // Call the nav function to initialize navigation
   getInitialTB();
-  //getBooksDD();
+  //getPeriodsDD();
 
   // Event listener for dropdown change
   $("#periods").change(function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
   });
 });
 
-function getBooksDD(artData) {
+function getPeriodsDD(artData) {
   var periodsSet = new Set();
   periodsSet.add("All");
 
@@ -20,13 +20,16 @@ function getBooksDD(artData) {
     periodsSet.add(painting.period);
   });
 
-  var options = "";
-        periodsSet.forEach(period => {
-            options += `<option value="${period}">${period}</option>`;
-        });
+    var options = "";
+    periodsSet.forEach(period => {
+      options += `<option value="${period}">${period}</option>`;
+    });
 
-        $("#periods").html(options);
-        console.log("Dropdown Options:", options); // Debugging line
+      // Save the current selected period
+      var selectedPeriod = $("#periods").val();
+      $("#periods").html(options);
+      $("#periods").val(selectedPeriod); // Restore the selected period
+      console.log("Dropdown Options:", options); // Debugging line
     }
 
 function getInitialTB()
@@ -66,7 +69,7 @@ function getInitialTB()
       $("#tbody").html(thisTable); // Update the table body
 
       // Populate the dropdown menu with authors
-      getBooksDD(artData);
+      getPeriodsDD(artData);
      } else {
                     console.error("No paintings data found in response.");
                 }

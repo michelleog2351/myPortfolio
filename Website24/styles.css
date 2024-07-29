@@ -12,6 +12,16 @@ body {
   background-image: url("pictures/dance/wood_bg.jpg");
 }
 
+.nav-link:hover, .dropdown-item:hover{
+  /* color: brown !important; */
+  font-weight: bold !important; /* Color when hovered over */
+  background-color: lightgray; /* Optional: change background color */
+}
+
+.nav-link:active, .dropdown-item:active{
+  background-color: darkgray !important; /* Optional: change background color */
+}                     
+
 /* Carousel */
 .carousel-slide {
   width: 100%;
