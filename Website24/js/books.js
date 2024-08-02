@@ -15,6 +15,7 @@ $(document).ready(function () {
       });
   
   getInitialTB();
+  AddToRead();
 });
 
 function getBooksDD() {
@@ -93,6 +94,29 @@ function getBooksDD() {
   });
 }
 
+function AddToRead()
+{
+  $("#readButton").click(function()
+  {
+    console.log("and this was clicked");
+
+    image1 = "bookImages/readBook.jpg";
+    $("#readBookImg").attr("src", image1); 
+
+    // Show the Bootstrap modal
+     $("#cartModal").modal('show');
+  }
+  );
+}
+
+function WantToBuy()
+{
+  ("#purchaseButton").click(function()
+  {
+
+  }
+  );
+}
 function getInitialTB()
 	{
 		// AJAX request to fetch data from the server

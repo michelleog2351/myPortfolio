@@ -80,20 +80,30 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Buy</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">ADD TO WANT TO READ</button>
+            <button type="button" id="readButton" class="btn btn-primary" data-dismiss="modal">ADD TO WANT TO READ</button>
+            <button type="button" id="purchaseButton" class="btn btn-primary" data-dismiss="modal">Buy</button>
  
           </div>
         </div>
-       <!-- Modal Structure -->
-<div id="cartModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Book Added to Cart</h2>
-    <p>The book has been successfully added to your cart.</p>
-  </div>
-</div>
 
+       <!-- Modal Structure -->
+ <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Book Added</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="" class="card-img-top" src="" alt="Book image">
+            <div class="card-body">
+               <h6 id="successful">The book has been successfully added to your cart.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>&copy; L00176523 Client Side Development 2024</footer>
