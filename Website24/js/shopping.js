@@ -3,72 +3,17 @@ var booksData = [];
 // Wait for the document to be fully loaded before executing any code
 $(document).ready(function () {
   nav(); // Call the nav function to initialize navigation
-  // getInitialTB();
-  //getBooksDD();
-
-  // Only start the timeout after all images are loaded
-      $(window).on('load', function () {
-        // Extra delay (optional)
-        setTimeout(function() {
-          $('.buttonload').html('Loaded'); // Change button text after loading
-        }, 5000); // Additional delay after all resources are loaded
-      });
-  
-  getInitialTB();
-  AddToRead();
+  ShoppingNav()
+ // getInitialTB();
 });
-
-function getBooksDD() {
-  var authorsSet = new Set(); // Using Set to track unique authors
-
-  // Collect unique authors
-  $.each(booksData, function (index, value) {
-    authorsSet.add(value.author);
-  });
-
-  // Convert the Set to an Array and sort it
-  var authorsArray = Array.from(authorsSet).sort();
-
-  // Populate the dropdown with sorted authors
-  $.each(authorsArray, function (index, author) {
-    $("#books").append(
-      `<option value='${author}'>${author}</option>`
-    );
-  });
-
-      // https://www.bookstation.ie/product/georges-marvellous-medicine-2/
-      // <a href="https://www.bookstation.ie/product/${value.title}-2">Info...</a>
-
-
-      $("#books").change(function() 
-    	{
-        // call the empty() function to clear the table to prevent data being overwritten
-        $("#tbody").empty();
-
-        var thisTable = "";
-
-        // // Sort booksData by title alphabetically
-        // Sort booksData by title alphabetically using an if statement approach
-        booksData.sort(function(a, b) {
-          if (a.title < b.title) {
-            return -1;
-          }
-          if (a.title > b.title) {
-            return 1;
-          }
-          return 0;
-        });
-        // booksData.sort((a, b) => a.title.localeCompare(b.title));
        
            $.each(booksData, function(index, value) 
            {
-            if ($("#books").val() == value.author || $("#books").val() == "All") {
               thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td>BUY | €${value.price.toFixed(2)}</td>`;
+              thisTable += `<td>€${value.price.toFixed(2)}</td>`;
               thisTable += `</tr>`;
-            }
            });
         
         $("#tbody").html(thisTable);
@@ -91,30 +36,8 @@ function getBooksDD() {
       // Show the modal
       $("#bookModal").modal('show');
     });
-  });
-}
 
-function AddToRead()
-{
-  $("#readButton").click(function()
-  {
-    var image1 = "bookImages/readBook.jpg";
-    $("#addBook").attr("src", image1); 
 
-    // Show the Bootstrap modal
-     $("#cartModal").modal('show');
-  }
-  );
-}
-
-function WantToBuy()
-{
-  ("#purchaseButton").click(function()
-  {
-
-  }
-  );
-}
 function getInitialTB()
 	{
 		// AJAX request to fetch data from the server
@@ -144,7 +67,7 @@ function getInitialTB()
         thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td class="success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
+              thisTable += `<td>€${value.price.toFixed(2)}</td>`; 
               thisTable += `</tr>`;
       });
       $("#tbody").html(thisTable); // Update the table body
