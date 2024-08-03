@@ -66,7 +66,7 @@ function getBooksDD() {
               thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td>BUY | €${value.price.toFixed(2)}</td>`;
+              thisTable += `<td class="btn btn-success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
               thisTable += `</tr>`;
             }
            });
@@ -144,7 +144,7 @@ function getInitialTB()
         thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td class="success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
+              thisTable += `<td class="btn btn-success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
               thisTable += `</tr>`;
       });
       $("#tbody").html(thisTable); // Update the table body
