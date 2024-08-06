@@ -1,21 +1,16 @@
-// Create an empty array to store data received from the database
-var booksData = [];
-// Wait for the document to be fully loaded before executing any code
-$(document).ready(function () {
-  nav(); // Call the nav function to initialize navigation
-  // getInitialTB();
-  //getBooksDD();
-
-  // Only start the timeout after all images are loaded
-      $(window).on('load', function () {
+$(window).on('load', function () {
         // Extra delay (optional)
         setTimeout(function() {
           $('.buttonload').html('Loaded'); // Change button text after loading
         }, 5000); // Additional delay after all resources are loaded
       });
+
+$(document).ready(function () {
+  nav(); // Call the nav function to initialize navigation
   
   getInitialTB();
   AddToRead();
+  WantToBuy();
 });
 
 function getBooksDD() {
@@ -66,7 +61,7 @@ function getBooksDD() {
               thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td class="btn btn-success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
+              thisTable += `<td><button class="btn btn-success buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
               thisTable += `</tr>`;
             }
            });
@@ -109,11 +104,15 @@ function AddToRead()
 
 function WantToBuy()
 {
-  ("#purchaseButton").click(function()
-  {
-
-  }
-  );
+   // Attach click event to the buy buttons
+    $(".btn btn-success buy-button").click(function() {
+      let bookTitle = $(this).data("title");
+      // Handle the book purchase action here
+      alert("You clicked buy for: " + bookTitle);
+      // Example: Redirect to a purchase page or show a modal
+      // window.location.href = `purchase.html?title=${bookTitle}`;
+      // Or display a modal for purchasing
+    });
 }
 function getInitialTB()
 	{
@@ -144,7 +143,7 @@ function getInitialTB()
         thisTable += `<tr>`;
               thisTable += `<td><img src="bookImages/${value.title}.jpg" class="book-image" data-title="${value.title}" data-author="${value.author}" data-price="${value.price.toFixed(2)}" data-description="${value.description}" data-image="bookImages/${value.title}.jpg" title="Click here to learn more about ${value.title}"></td>`;
               thisTable += `<td>${value.title} <br><b>${value.author}</b></td>`;
-              thisTable += `<td class="btn btn-success"><button class="buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
+              thisTable += `<td><button class="btn btn-success buy-button" data-title="${value.title}">BUY | €${value.price.toFixed(2)}</button></td>`;
               thisTable += `</tr>`;
       });
       $("#tbody").html(thisTable); // Update the table body

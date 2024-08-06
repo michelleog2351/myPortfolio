@@ -9,7 +9,28 @@ h1 {
 }
 
 body {
+  margin:0;
+  padding:0;
+  height:"100%";
   background-image: url("pictures/dance/wood_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bookshelf {
+  background-image: url("bookImages/bookshelf.jpg");
+  background-repeat: repeat-y; /* Repeat vertically */
+  background-size: 100% auto; /* Cover the width, adjust height automatically */
+  min-height: 100vh; /* Ensure the section is at least the height of the viewport */
+}
+
+/* Center container */
+.top-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Aligns items to the top */
+  height: 100%; /* Make sure the container takes the full height */
+  padding-top: 20px; /* Adjust the top padding as needed */
 }
 
 .nav-link:hover, .dropdown-item:hover{
