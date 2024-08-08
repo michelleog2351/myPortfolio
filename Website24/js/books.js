@@ -11,6 +11,20 @@ $(document).ready(function () {
   getInitialTB();
   AddToRead();
   WantToBuy();
+
+   $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#scrollToTopBtn').fadeIn();
+    } else {
+      $('#scrollToTopBtn').fadeOut();
+    }
+  });
+
+  // Scroll to top when the button is clicked
+  $('#scrollToTopBtn').click(function() {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 });
 
 function getBooksDD() {
@@ -100,18 +114,14 @@ function AddToRead()
      $("#cartModal").modal('show');
   }
   );
+  
 }
 
 function WantToBuy()
 {
    // Attach click event to the buy buttons
-    $(".btn btn-success buy-button").click(function() {
-      let bookTitle = $(this).data("title");
-      // Handle the book purchase action here
-      alert("You clicked buy for: " + bookTitle);
-      // Example: Redirect to a purchase page or show a modal
-      // window.location.href = `purchase.html?title=${bookTitle}`;
-      // Or display a modal for purchasing
+    $(".buy-button").click(function() {
+      window.location.replace("http://localhost/myPortfolio/Website24/shopping.html");
     });
 }
 function getInitialTB()

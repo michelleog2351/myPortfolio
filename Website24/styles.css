@@ -24,6 +24,29 @@ body {
   min-height: 100vh; /* Ensure the section is at least the height of the viewport */
 }
 
+#readButton
+{
+  background-color: #dc3545;
+}
+
+#readButton:hover {
+  background-color: #e55361; /* Slightly lighter red on hover */
+}
+
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  background-color: #198754; /* Green to match buy buttons */
+  padding: 15px 30px; /* Increased padding */
+}
+
+ #scrollToTopBtn:hover {
+        background-color: #28a745; /* Darker green on hover */
+      }
+
 /* Center container */
 .top-container {
   display: flex;
