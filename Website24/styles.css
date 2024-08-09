@@ -8,6 +8,14 @@ h1 {
   text-align: center;
 }
 
+.h1-index, h2, h3{
+  color: gainsboro;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 500%;
+  text-align: left;
+}
+
 body {
   margin:0;
   padding:0;
@@ -15,6 +23,12 @@ body {
   background-image: url("pictures/dance/wood_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.butterfly{
+  background-image: url("pictures/index/butterfly_background.jpg");
+  background-size: cover;
+
 }
 
 .bookshelf {
@@ -256,4 +270,5 @@ table tr:hover {
 /* Footer */
 footer {
   text-align: center;
+  color: white;
 }
