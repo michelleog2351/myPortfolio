@@ -11,7 +11,7 @@ $(document).ready(function () {
     // var password = $("#password").val();
 
     if (fName && lName && email) {
-      alert(`First Name: " ${fName} Last Name: " + lName + "Email: " + email`);
+      alert("Your message has been acknowledged");
       $("#contactModal").modal("hide"); // Hide the modal after showing the alert
     } else {
       alert("Please fill in all fields.");
